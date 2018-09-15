@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddressBookCore", "AddressBookCore\AddressBookCore.vcxproj", "{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBookUI", "AddressBookUI\AddressBookUI.csproj", "{C62B4C91-82F9-41E1-BA98-5F8112007994}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D} = {5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddressBookCmdLine", "AddressBookCmdLine\AddressBookCmdLine.vcxproj", "{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D} = {5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release_for_debug|Any CPU = Release_for_debug|Any CPU
+		Release_for_debug|x64 = Release_for_debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Debug|x64.ActiveCfg = Debug|x64
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Debug|x64.Build.0 = Debug|x64
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Release_for_debug|Any CPU.ActiveCfg = Release_for_debug|Win32
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Release_for_debug|Any CPU.Build.0 = Release_for_debug|Win32
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Release_for_debug|x64.ActiveCfg = Release_for_debug|x64
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Release_for_debug|x64.Build.0 = Release_for_debug|x64
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Release|x64.ActiveCfg = Release|x64
+		{5FE2A7B1-8B45-4E48-8C40-37A8A94B810D}.Release|x64.Build.0 = Release|x64
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Debug|x64.Build.0 = Debug|Any CPU
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Release_for_debug|Any CPU.ActiveCfg = Release_for_debug|Any CPU
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Release_for_debug|Any CPU.Build.0 = Release_for_debug|Any CPU
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Release_for_debug|x64.ActiveCfg = Debug|x64
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Release_for_debug|x64.Build.0 = Debug|x64
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Release|x64.ActiveCfg = Release|x64
+		{C62B4C91-82F9-41E1-BA98-5F8112007994}.Release|x64.Build.0 = Release|x64
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Debug|x64.ActiveCfg = Debug|x64
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Debug|x64.Build.0 = Debug|x64
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Release_for_debug|Any CPU.ActiveCfg = Release_for_debug|Win32
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Release_for_debug|Any CPU.Build.0 = Release_for_debug|Win32
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Release_for_debug|x64.ActiveCfg = Release_for_debug|x64
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Release_for_debug|x64.Build.0 = Release_for_debug|x64
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Release|Any CPU.ActiveCfg = Release|Win32
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Release|x64.ActiveCfg = Release|x64
+		{F8FA6E8E-F859-497D-B561-75B3AE5D70F5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+LIBRARY "AddressBookCore.dll"
+
+EXPORTS
+	test
+	addressBookBinarySize
+	getAddressBook

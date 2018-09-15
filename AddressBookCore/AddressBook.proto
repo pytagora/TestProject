@@ -1,0 +1,11 @@
+syntax = "proto3";
+package Abook;
+option cc_enable_arenas = false;
+import "AddressBookEntry.proto";
+
+option csharp_namespace = "Abook";
+
+message AddressBook
+{
+	repeated AddressBookEntry entry = 1;
+};
