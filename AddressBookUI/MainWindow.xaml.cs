@@ -23,6 +23,7 @@ namespace AddressBookUI
         public MainWindow()
         {
             InitializeComponent();
+            //Google.Protobuf.Reflection.FileDescriptor.FromGeneratedCode("AddressBook.cs",,);
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
