@@ -4,10 +4,11 @@
 
 API_CALL void test()
 {
-	/*AB->Instance();
+	AB->Instance();
 	AB->iterateAB();
 	AB->addSomeRecords();
-	AB->save();*/
+	AB->iterateAB();
+	AB->save();
 }
 
 API_CALL size_t __stdcall addressBookBinarySize()
