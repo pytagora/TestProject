@@ -23,12 +23,21 @@ namespace AddressBookUI
         public MainWindow()
         {
             InitializeComponent();
-            //Google.Protobuf.Reflection.FileDescriptor.FromGeneratedCode("AddressBook.cs",,);
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             var book = AddressBook.getAddressBook();
+        }
+
+        private void button_Descriptor(object sender, RoutedEventArgs e)
+        {
+            var metaData = Abook.AddressBookEntry.Descriptor.Fields.InFieldNumberOrder();
+            var Columns = new List<string>();
+            foreach (var data in metaData)
+            {
+                Columns.Add(data.Name);
+            }
         }
     }
 }
