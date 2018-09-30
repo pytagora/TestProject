@@ -33,10 +33,10 @@ namespace AddressBookUI
         private void button_Descriptor(object sender, RoutedEventArgs e)
         {
             var metaData = Abook.AddressBookEntry.Descriptor.Fields.InFieldNumberOrder();
-            var Columns = new List<string>();
+            var addressBookColumns = new List<string>();
             foreach (var data in metaData)
             {
-                Columns.Add(data.Name);
+                addressBookColumns.Add(data.Name);
             }
         }
     }

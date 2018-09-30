@@ -76,7 +76,7 @@ void CAddressBook::iterateAB()
 	if (m_pPBAddressBook)
 	{
 		int sz = m_pPBAddressBook->entry_size();
-		for (int i = 0;i < sz;++i)
+		for (int i = 0; i < sz; ++i)
 		{
 			auto entry = m_pPBAddressBook->entry(i);
 			std::cout << entry.firstname() << '\t' << entry.lastname() << " ---- " << entry.address() << std::endl;
@@ -147,10 +147,18 @@ void CAddressBook::addSomeRecords()
 
 		{
 			Abook::AddressBookEntry *pEntry = m_pPBAddressBook->add_entry();
-			pEntry->set_id(11);
+			pEntry->set_id(12);
 			*(pEntry->mutable_address()) = "address 3";
 			*(pEntry->mutable_firstname()) = "first name 3";
 			*(pEntry->mutable_lastname()) = "last name 3";
+		}
+
+		{
+			Abook::AddressBookEntry *pEntry = m_pPBAddressBook->add_entry();
+			pEntry->set_id(13);
+			*(pEntry->mutable_address()) = "address 4";
+			*(pEntry->mutable_firstname()) = "first name 4";
+			*(pEntry->mutable_lastname()) = "last name 4";
 		}
 	}
 }
