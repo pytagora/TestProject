@@ -6,7 +6,7 @@ API_CALL void test()
 {
 	AB->Instance();
 	AB->iterateAB();
-	//AB->addSomeRecords();
+	AB->addSomeRecords();
 	AB->iterateAB();
 	AB->save();
 }

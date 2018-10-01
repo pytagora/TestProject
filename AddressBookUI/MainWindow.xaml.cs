@@ -23,6 +23,30 @@ namespace AddressBookUI
         public MainWindow()
         {
             InitializeComponent();
+
+            var gridView = new GridView();
+            this.addressBookList.View = gridView;
+
+            var metaData = Abook.AddressBookEntry.Descriptor.Fields.InFieldNumberOrder();
+            var addressBookColumns = new List<string>();
+            foreach (var data in metaData)
+            {
+                addressBookColumns.Add(data.Name);
+            }
+
+            foreach (var column in addressBookColumns)
+            {
+                gridView.Columns.Add(new GridViewColumn
+                {
+                    Header = column, DisplayMemberBinding = new Binding(UpperCaseFirst(column))
+                });
+            }
+
+            foreach(var entry in AddressBook.getAddressBook().Entry)
+            {
+                this.addressBookList.Items.Add(entry);
+
+            }
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -30,14 +54,15 @@ namespace AddressBookUI
             var book = AddressBook.getAddressBook();
         }
 
-        private void button_Descriptor(object sender, RoutedEventArgs e)
+        static string UpperCaseFirst(string word)
         {
-            var metaData = Abook.AddressBookEntry.Descriptor.Fields.InFieldNumberOrder();
-            var addressBookColumns = new List<string>();
-            foreach (var data in metaData)
+            if (string.IsNullOrEmpty(word))
             {
-                addressBookColumns.Add(data.Name);
+                return string.Empty;
             }
+            char[] a = word.ToCharArray();
+            a[0] = char.ToUpper(a[0]);
+            return new string(a);
         }
     }
 }
